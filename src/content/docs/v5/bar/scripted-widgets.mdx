@@ -45,8 +45,7 @@ my_setting = "value"
 | Function | Returns | Description |
 |----------|---------|-------------|
 | `barWidget.setText(text)` | — | Set the label text |
-| `barWidget.setGlyph(name)` | — | Set the icon by Tabler icon name |
-| `barWidget.setGlyphCodepoint(cp)` | — | Set the icon by Unicode codepoint |
+| `barWidget.setGlyph(name)` | — | Set the icon by Noctalia alias, Tabler icon name, or `U+` / `0x` codepoint string |
 | `barWidget.setColor(role)` | — | Set the label color by color role |
 | `barWidget.setGlyphColor(role)` | — | Set the glyph color by color role |
 | `barWidget.setVisible(visible)` | — | Show or hide the entire widget |
@@ -75,7 +74,7 @@ Every scripted widget has the following node tree:
 ```
 InputArea (accepts left / right / middle clicks)
   └─ Flex (horizontal, center-aligned)
-      ├─ Glyph (hidden until setGlyph/setGlyphCodepoint is called)
+      ├─ Glyph (hidden until setGlyph is called)
       └─ Label
 ```
 
