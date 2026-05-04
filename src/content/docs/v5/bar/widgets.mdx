@@ -399,7 +399,14 @@ show_condition = false
 
 Shows the pending notification count. Right-clicking toggles transient Do Not Disturb (DND) mode.
 
-No configurable settings.
+| Setting | Type | Default | Description |
+|---------|------|---------|-------------|
+| `hide_when_no_unread` | bool | `false` | Hide the widget when there are no unread notifications |
+
+```toml
+[widget.notifications]
+hide_when_no_unread = true
+```
 
 ### IPC
 
