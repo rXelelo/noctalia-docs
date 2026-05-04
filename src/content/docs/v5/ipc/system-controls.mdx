@@ -1,6 +1,6 @@
 ---
 title: System Controls
-description: IPC commands for volume, microphone, brightness, night light, and idle inhibitor.
+description: IPC commands for volume, microphone, brightness, night light, and caffeine.
 ---
 
 These commands are useful for media keys, compositor binds, scripts, and custom widgets.
@@ -49,13 +49,13 @@ Targets can be `current`, `all`, `*`, a display id such as `eDP-1` or `DP-1`, or
 | Toggle schedule | `noctalia msg nightlight-toggle` | Toggle scheduled night light. |
 | Toggle forced mode | `noctalia msg nightlight-force-toggle` | Force night light on or return to schedule behavior. |
 
-## Idle inhibitor
+## Caffeine
 
 | Action | Command | Description |
 |--------|---------|-------------|
-| Enable inhibitor | `noctalia msg idle-inhibitor-enable` | Prevent idle actions while enabled. |
-| Disable inhibitor | `noctalia msg idle-inhibitor-disable` | Allow idle actions again. |
-| Toggle inhibitor | `noctalia msg idle-inhibitor-toggle` | Switch idle inhibitor on or off. |
+| Enable caffeine | `noctalia msg caffeine-enable` | Prevent idle actions while enabled. |
+| Disable caffeine | `noctalia msg caffeine-disable` | Allow idle actions again. |
+| Toggle caffeine | `noctalia msg caffeine-toggle` | Switch caffeine on or off. |
 
 ## Display power
 
