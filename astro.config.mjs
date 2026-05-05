@@ -160,7 +160,16 @@ export default defineConfig({
               items: [
                 { label: "Installation", link: "v5/getting-started/installation/"},
                 { label: "NixOS", link: "v5/getting-started/nixos/"},
-              ], 
+                {
+                  label: "Compositor Settings",
+                  items: [
+                    {
+                      label: "Niri",
+                      link: "v5/getting-started/compositor-settings/niri/",
+                    },
+                  ],
+                },
+              ],
             },
             { 
               label: "Configuration",
