@@ -240,11 +240,13 @@ Shows the current media artwork and track title from MPRIS.
 
 | Setting | Type | Default | Description |
 |---------|------|---------|-------------|
+| `min_length` | number | `80` | Minimum length for the title text |
 | `max_length` | number | `220` | Maximum length for the title text |
 | `art_size` | number | `16` | Artwork size in pixels before scale |
 
 ```toml
 [widget.media]
+min_length = 80
 max_length = 220
 art_size   = 24
 ```
