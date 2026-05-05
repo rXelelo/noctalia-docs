@@ -429,15 +429,19 @@ System tray (StatusNotifierItem).
 | Setting | Type | Default | Description |
 |---------|------|---------|-------------|
 | `hidden` | array of string | `[]` | Tray items to hide by id/name/bus/path token |
+| `pinned` | array of string | `[]` | Tray items that always stay visible in the bar when `drawer = true` |
 | `drawer` | bool | `false` | Replace inline tray icons with a tray button that opens a tray drawer panel |
 | `drawer_columns` | number | `3` | Number of tray icons per row in the drawer panel (`1` to `5`) |
 
 ```toml
 [widget.tray]
 hidden = ["nm-applet", "blueman", "org.kde.StatusNotifierItem-1-1"]
+pinned = ["nm-applet"]
 drawer = true
 drawer_columns = 3
 ```
+
+Tip: right-click a tray item and use `Pin` / `Unpin` in the item menu to update `pinned` without editing config manually.
 
 ---
 
