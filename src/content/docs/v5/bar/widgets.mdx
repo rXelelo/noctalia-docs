@@ -429,10 +429,14 @@ System tray (StatusNotifierItem).
 | Setting | Type | Default | Description |
 |---------|------|---------|-------------|
 | `hidden` | array of string | `[]` | Tray items to hide by id/name/bus/path token |
+| `drawer` | bool | `false` | Replace inline tray icons with a tray button that opens a tray drawer panel |
+| `drawer_columns` | number | `3` | Number of tray icons per row in the drawer panel (`1` to `5`) |
 
 ```toml
 [widget.tray]
 hidden = ["nm-applet", "blueman", "org.kde.StatusNotifierItem-1-1"]
+drawer = true
+drawer_columns = 3
 ```
 
 ---
